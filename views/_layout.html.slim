@@ -3,7 +3,19 @@ html
     title Example title
     meta charset='utf-8'
     link rel="stylesheet" href="/stylesheets/application.css"
+    script type="text/javascript" src="http://www.code.jquery.com/jquery-1.6.2.min.js"
   body
     #container
       #content
-        == yield
+        #tweets
+
+javascript:
+    $(function() {
+        $("tweets").tweet({
+            query: 'ruxii',
+            join_text: false,
+            avatar_size: 32
+            count: 5,
+            loadint_text: "loading tweets..."
+        });
+    });
