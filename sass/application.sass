@@ -14,44 +14,44 @@ body
   +blueprint-utilities
   +blueprint-debug
   +blueprint-interaction
-  // Remove the scaffolding when you're ready to start doing visual design.
-  // Or leave it in if you're happy with how blueprint looks out-of-the-box
   +blueprint-scaffolding
   padding: 10px
+  a
+    text-decoration: none
+  #container
+    +container
+  #content
+    +column($blueprint-grid-columns)
 
-#container
-  +container
-#content
-  +column($blueprint-grid-columns)
+  #tweets
+    +column(7, true)
 
-#tweets
-  +column(7, true)
-
-  ul.tweet_list
-    padding: 0px
-    margin: 0px
-    +no-bullets
-
-    li
-      overflow: hidden
-      border-top: 1px dotted #ccc
-      padding-top: 10px
-      padding-bottom: 10px
+    ul.tweet_list
+      padding: 0px
+      margin: 0px
       +no-bullets
-      &.tweet_first
-        border-top: none
-        padding-top: 0px
-      .tweet_avatar
-        margin-left: 10px
-        +column(1)
-        img
-          border: 2px solid red
-      .tweet_time, .tweet_text
-        margin-left: 10px
-        +column(5,true)
-      .tweet_time
-        font-size: 10px
-        a
-          color: #999
-    .tweet_even
-      background: #F2F2F2
+
+      li
+        overflow: hidden
+        border-top: 1px dotted #ccc
+        padding-top: 10px
+        padding-bottom: 10px
+        +no-bullets
+        text-decoration: none
+        &.tweet_first
+          border-top: none
+          padding-top: 0px
+        .tweet_avatar
+          margin-left: 10px
+          +column(1)
+          img
+            border: 2px solid #ccc
+        .tweet_time, .tweet_text
+          margin-left: 10px
+          +column(5,true)
+        .tweet_time
+          font-size: 10px
+          a
+            color: #999
+      .tweet_even
+        background: #F2F2F2
