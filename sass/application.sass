@@ -3,6 +3,9 @@
 @import blueprint
 @import blueprint/scaffolding
 @import compass/css3
+@import "compass/typography/lists/bullets"
+
+
 
 +global-reset
 
@@ -21,3 +24,35 @@ body
 #content
   +column($blueprint-grid-columns)
 
+#tweets
+  +column(7, true)
+
+  ul.tweet_list
+    padding: 0px
+    margin: 0px
+    +no-bullets
+
+    li
+      overflow: hidden
+      border-top: 1px dotted #ccc
+      padding-top: 10px
+      margin-bottom: 10px
+      +no-bullets
+      &.tweet_first
+        border-top: none
+        padding-top: 0px
+      .tweet_avatar
+        padding-top: 5px
+        margin-left: 10px
+        +column(1)
+        img
+          border: 2px solid red
+      .tweet_time, .tweet_text
+        margin-left: 10px
+        +column(5,true)
+      .tweet_time
+        font-size: 10px
+        a
+          color: #999
+      .tweet_first
+        background: green

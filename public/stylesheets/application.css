@@ -371,3 +371,72 @@ body form.inline p {
 * html #content {
   overflow-x: hidden;
 }
+
+#tweets {
+  display: inline;
+  float: left;
+  margin-right: 0;
+  width: 270px;
+}
+* html #tweets {
+  overflow-x: hidden;
+}
+#tweets ul.tweet_list {
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+}
+#tweets ul.tweet_list li {
+  list-style-image: none;
+  list-style-type: none;
+  margin-left: 0px;
+}
+#tweets ul.tweet_list li {
+  overflow: hidden;
+  border-top: 1px dotted #cccccc;
+  padding-top: 10px;
+  margin-bottom: 10px;
+  list-style: none;
+}
+#tweets ul.tweet_list li li {
+  list-style-image: none;
+  list-style-type: none;
+  margin-left: 0px;
+}
+#tweets ul.tweet_list li.tweet_first {
+  border-top: none;
+  padding-top: 0px;
+}
+#tweets ul.tweet_list li .tweet_avatar {
+  padding-top: 5px;
+  margin-left: 10px;
+  display: inline;
+  float: left;
+  margin-right: 10px;
+  width: 30px;
+}
+* html #tweets ul.tweet_list li .tweet_avatar {
+  overflow-x: hidden;
+}
+#tweets ul.tweet_list li .tweet_avatar img {
+  border: 2px solid red;
+}
+#tweets ul.tweet_list li .tweet_time, #tweets ul.tweet_list li .tweet_text {
+  margin-left: 10px;
+  display: inline;
+  float: left;
+  margin-right: 0;
+  width: 190px;
+}
+* html #tweets ul.tweet_list li .tweet_time, * html #tweets ul.tweet_list li .tweet_text {
+  overflow-x: hidden;
+}
+#tweets ul.tweet_list li .tweet_time {
+  font-size: 10px;
+}
+#tweets ul.tweet_list li .tweet_time a {
+  color: #999999;
+}
+#tweets ul.tweet_list li .tweet_first {
+  background: green;
+}
