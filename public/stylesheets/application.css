@@ -395,7 +395,7 @@ body form.inline p {
   overflow: hidden;
   border-top: 1px dotted #cccccc;
   padding-top: 10px;
-  margin-bottom: 10px;
+  padding-bottom: 10px;
   list-style: none;
 }
 #tweets ul.tweet_list li li {
@@ -408,7 +408,6 @@ body form.inline p {
   padding-top: 0px;
 }
 #tweets ul.tweet_list li .tweet_avatar {
-  padding-top: 5px;
   margin-left: 10px;
   display: inline;
   float: left;
@@ -437,6 +436,6 @@ body form.inline p {
 #tweets ul.tweet_list li .tweet_time a {
   color: #999999;
 }
-#tweets ul.tweet_list li .tweet_first {
-  background: green;
+#tweets ul.tweet_list .tweet_even {
+  background: #f2f2f2;
 }
